@@ -1,2 +1,4 @@
 .envrc
 dist-newstyle/
+localhost.crt
+localhost.key

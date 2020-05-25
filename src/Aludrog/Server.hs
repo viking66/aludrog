@@ -8,6 +8,7 @@ module Aludrog.Server
 import Data.Proxy
 import Network.Wai
 import Network.Wai.Handler.Warp
+import Network.Wai.Handler.WarpTLS
 import Servant
 import Servant.API
 
@@ -25,4 +26,7 @@ app :: Application
 app = serve aludrogAPI server
 
 runApp :: IO ()
-runApp = run 8080 app
+runApp = runTLS tlsOpts warpOpts app
+  where
+    tlsOpts = tlsSettings "localhost.crt" "localhost.key"
+    warpOpts = setPort 8080 defaultSettings

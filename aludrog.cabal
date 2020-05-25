@@ -26,6 +26,7 @@ library
                      , servant-server
                      , wai
                      , warp
+                     , warp-tls
   mixins:              base hiding (Prelude)
                      , relude (Relude as Prelude)
   hs-source-dirs:      src
