@@ -1,6 +1,6 @@
 module Main where
 
-import Aludrog (run)
+import Aludrog (runApp)
 
 main :: IO ()
-main = run
+main = runApp

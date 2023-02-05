@@ -1,0 +1,39 @@
+:root {
+  --brown: #5D5C61;
+  --gray: #4E4E50;
+  --light-blue: #7395AE;
+  --dark-blue: #557A95;
+  --tan: #B1A296;
+}
+
+html {
+  background-color: var(--brown);
+  font-size: 10px;
+  font-family: "Roboto Flex", sans-serif;
+}
+
+body {
+  width: 600px;
+  margin: 0 auto;
+  background-color: var(--light-blue);
+  padding: 0 20px 20px 20px;
+  border: 5px solid var(--dark-blue);
+}
+
+h1 {
+  margin: 0;
+  padding: 20px 0;
+  color: var(--gray);
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+p,
+li {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+}

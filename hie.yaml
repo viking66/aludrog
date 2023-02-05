@@ -1,0 +1,10 @@
+cradle:
+  cabal:
+    - path: "src"
+      component: "lib:aludrog"
+
+    - path: "app/Main.hs"
+      component: "aludrog:exe:aludrog"
+
+    - path: "test"
+      component: "aludrog:test:aludrog-test"
